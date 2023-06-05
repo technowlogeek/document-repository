@@ -58,8 +58,8 @@
     </operation>
   </binding>
   <service name="DocumentRepository_Service">
-    <port name="DocumentRepository_Port_soap" binding="ihe:DocumentRepository_Binding">
-      <soap:address location="http://localhost:8081/WebServiceProject2/services/DocumentRepository_Port_soap"/>
+    <port name="DocumentRepository_Service" binding="ihe:DocumentRepository_Binding">
+      <soap:address location="http://localhost:8081/WebServiceProject2/services/DocumentRepository_Service"/>
     </port>
   </service>
 </definitions>

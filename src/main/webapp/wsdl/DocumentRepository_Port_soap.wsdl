@@ -117,9 +117,9 @@
     
   <service name="DocumentRepository_Service">
         
-    <port binding="ihe:DocumentRepository_Binding" name="DocumentRepository_Port_soap">
+    <port binding="ihe:DocumentRepository_Binding" name="DocumentRepository_Service">
             
-      <soap:address location="http://localhost:8080/WebServiceProject2/services/DocumentRepository_Port_soap"/>
+      <soap:address location="http://localhost:8080/WebServiceProject2/services/DocumentRepository_Service"/>
           
     </port>
       

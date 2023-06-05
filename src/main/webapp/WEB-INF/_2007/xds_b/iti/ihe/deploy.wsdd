@@ -12,11 +12,11 @@
 
   <!-- Services from DocumentRepository_Service WSDL service -->
 
-  <service name="DocumentRepository_Port_soap" provider="java:RPC" style="document" use="literal">
+  <service name="DocumentRepository_Service" provider="java:RPC" style="document" use="literal">
       <parameter name="wsdlTargetNamespace" value="urn:ihe:iti:xds-b:2007"/>
       <parameter name="wsdlServiceElement" value="DocumentRepository_Service"/>
       <parameter name="schemaQualified" value="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0,urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0,urn:ihe:iti:xds-b:2007,urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0,urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"/>
-      <parameter name="wsdlServicePort" value="DocumentRepository_Port_soap"/>
+      <parameter name="wsdlServicePort" value="DocumentRepository_Service"/>
       <parameter name="className" value="_2007.xds_b.iti.ihe.DocumentRepository_BindingSkeleton"/>
       <parameter name="wsdlPortType" value="DocumentRepository_PortType"/>
       <parameter name="typeMappingVersion" value="1.2"/>

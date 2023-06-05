@@ -11,5 +11,5 @@
 
   <!-- Services from DocumentRepository_Service WSDL service -->
 
-  <service name="DocumentRepository_Port_soap"/>
+  <service name="DocumentRepository_Service"/>
 </undeployment>

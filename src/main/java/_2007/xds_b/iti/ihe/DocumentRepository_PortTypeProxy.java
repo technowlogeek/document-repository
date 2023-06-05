@@ -15,7 +15,7 @@ public class DocumentRepository_PortTypeProxy implements _2007.xds_b.iti.ihe.Doc
   
   private void _initDocumentRepository_PortTypeProxy() {
     try {
-      documentRepository_PortType = (new _2007.xds_b.iti.ihe.DocumentRepository_ServiceLocator()).getDocumentRepository_Port_soap();
+      documentRepository_PortType = (new _2007.xds_b.iti.ihe.DocumentRepository_ServiceLocator()).getDocumentRepository_Service();
       if (documentRepository_PortType != null) {
         if (_endpoint != null)
           ((javax.xml.rpc.Stub)documentRepository_PortType)._setProperty("javax.xml.rpc.service.endpoint.address", _endpoint);

@@ -8,9 +8,9 @@
 package _2007.xds_b.iti.ihe;
 
 public interface DocumentRepository_Service extends javax.xml.rpc.Service {
-    public java.lang.String getDocumentRepository_Port_soapAddress();
+    public java.lang.String getDocumentRepository_ServiceAddress();
 
-    public _2007.xds_b.iti.ihe.DocumentRepository_PortType getDocumentRepository_Port_soap() throws javax.xml.rpc.ServiceException;
+    public _2007.xds_b.iti.ihe.DocumentRepository_PortType getDocumentRepository_Service() throws javax.xml.rpc.ServiceException;
 
-    public _2007.xds_b.iti.ihe.DocumentRepository_PortType getDocumentRepository_Port_soap(java.net.URL portAddress) throws javax.xml.rpc.ServiceException;
+    public _2007.xds_b.iti.ihe.DocumentRepository_PortType getDocumentRepository_Service(java.net.URL portAddress) throws javax.xml.rpc.ServiceException;
 }

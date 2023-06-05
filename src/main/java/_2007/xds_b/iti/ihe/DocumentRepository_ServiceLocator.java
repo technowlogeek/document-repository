@@ -21,39 +21,39 @@ public class DocumentRepository_ServiceLocator extends org.apache.axis.client.Se
         super(wsdlLoc, sName);
     }
 
-    // Use to get a proxy class for DocumentRepository_Port_soap
-    private java.lang.String DocumentRepository_Port_soap_address = "http://localhost:8080/DocumentRepository_Service";
+    // Use to get a proxy class for DocumentRepository_Service
+    private java.lang.String DocumentRepository_Service_address = "http://localhost:8080/DocumentRepository_Service";
 
-    public java.lang.String getDocumentRepository_Port_soapAddress() {
-        return DocumentRepository_Port_soap_address;
+    public java.lang.String getDocumentRepository_ServiceAddress() {
+        return DocumentRepository_Service_address;
     }
 
     // The WSDD service name defaults to the port name.
-    private java.lang.String DocumentRepository_Port_soapWSDDServiceName = "DocumentRepository_Port_soap";
+    private java.lang.String DocumentRepository_ServiceWSDDServiceName = "DocumentRepository_Service";
 
-    public java.lang.String getDocumentRepository_Port_soapWSDDServiceName() {
-        return DocumentRepository_Port_soapWSDDServiceName;
+    public java.lang.String getDocumentRepository_ServiceWSDDServiceName() {
+        return DocumentRepository_ServiceWSDDServiceName;
     }
 
-    public void setDocumentRepository_Port_soapWSDDServiceName(java.lang.String name) {
-        DocumentRepository_Port_soapWSDDServiceName = name;
+    public void setDocumentRepository_ServiceWSDDServiceName(java.lang.String name) {
+        DocumentRepository_ServiceWSDDServiceName = name;
     }
 
-    public _2007.xds_b.iti.ihe.DocumentRepository_PortType getDocumentRepository_Port_soap() throws javax.xml.rpc.ServiceException {
+    public _2007.xds_b.iti.ihe.DocumentRepository_PortType getDocumentRepository_Service() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
-            endpoint = new java.net.URL(DocumentRepository_Port_soap_address);
+            endpoint = new java.net.URL(DocumentRepository_Service_address);
         }
         catch (java.net.MalformedURLException e) {
             throw new javax.xml.rpc.ServiceException(e);
         }
-        return getDocumentRepository_Port_soap(endpoint);
+        return getDocumentRepository_Service(endpoint);
     }
 
-    public _2007.xds_b.iti.ihe.DocumentRepository_PortType getDocumentRepository_Port_soap(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public _2007.xds_b.iti.ihe.DocumentRepository_PortType getDocumentRepository_Service(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
             _2007.xds_b.iti.ihe.DocumentRepository_BindingStub _stub = new _2007.xds_b.iti.ihe.DocumentRepository_BindingStub(portAddress, this);
-            _stub.setPortName(getDocumentRepository_Port_soapWSDDServiceName());
+            _stub.setPortName(getDocumentRepository_ServiceWSDDServiceName());
             return _stub;
         }
         catch (org.apache.axis.AxisFault e) {
@@ -61,8 +61,8 @@ public class DocumentRepository_ServiceLocator extends org.apache.axis.client.Se
         }
     }
 
-    public void setDocumentRepository_Port_soapEndpointAddress(java.lang.String address) {
-        DocumentRepository_Port_soap_address = address;
+    public void setDocumentRepository_ServiceEndpointAddress(java.lang.String address) {
+        DocumentRepository_Service_address = address;
     }
 
     /**
@@ -73,8 +73,8 @@ public class DocumentRepository_ServiceLocator extends org.apache.axis.client.Se
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
             if (_2007.xds_b.iti.ihe.DocumentRepository_PortType.class.isAssignableFrom(serviceEndpointInterface)) {
-                _2007.xds_b.iti.ihe.DocumentRepository_BindingStub _stub = new _2007.xds_b.iti.ihe.DocumentRepository_BindingStub(new java.net.URL(DocumentRepository_Port_soap_address), this);
-                _stub.setPortName(getDocumentRepository_Port_soapWSDDServiceName());
+                _2007.xds_b.iti.ihe.DocumentRepository_BindingStub _stub = new _2007.xds_b.iti.ihe.DocumentRepository_BindingStub(new java.net.URL(DocumentRepository_Service_address), this);
+                _stub.setPortName(getDocumentRepository_ServiceWSDDServiceName());
                 return _stub;
             }
         }
@@ -94,8 +94,8 @@ public class DocumentRepository_ServiceLocator extends org.apache.axis.client.Se
             return getPort(serviceEndpointInterface);
         }
         java.lang.String inputPortName = portName.getLocalPart();
-        if ("DocumentRepository_Port_soap".equals(inputPortName)) {
-            return getDocumentRepository_Port_soap();
+        if ("DocumentRepository_Service".equals(inputPortName)) {
+            return getDocumentRepository_Service();
         }
         else  {
             java.rmi.Remote _stub = getPort(serviceEndpointInterface);
@@ -113,7 +113,7 @@ public class DocumentRepository_ServiceLocator extends org.apache.axis.client.Se
     public java.util.Iterator getPorts() {
         if (ports == null) {
             ports = new java.util.HashSet();
-            ports.add(new javax.xml.namespace.QName("urn:ihe:iti:xds-b:2007", "DocumentRepository_Port_soap"));
+            ports.add(new javax.xml.namespace.QName("urn:ihe:iti:xds-b:2007", "DocumentRepository_Service"));
         }
         return ports.iterator();
     }
@@ -123,8 +123,8 @@ public class DocumentRepository_ServiceLocator extends org.apache.axis.client.Se
     */
     public void setEndpointAddress(java.lang.String portName, java.lang.String address) throws javax.xml.rpc.ServiceException {
         
-if ("DocumentRepository_Port_soap".equals(portName)) {
-            setDocumentRepository_Port_soapEndpointAddress(address);
+if ("DocumentRepository_Service".equals(portName)) {
+            setDocumentRepository_ServiceEndpointAddress(address);
         }
         else 
 { // Unknown Port Name

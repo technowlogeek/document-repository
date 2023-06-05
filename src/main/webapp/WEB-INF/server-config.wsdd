@@ -28,12 +28,12 @@
   <ns1:parameter name="className" value="org.apache.axis.utils.Admin"/>
   <ns1:namespace>http://xml.apache.org/axis/wsdd/</ns1:namespace>
  </ns1:service>
- <ns1:service name="DocumentRepository_Port_soap" provider="java:RPC" style="document" use="literal">
+ <ns1:service name="DocumentRepository_Service" provider="java:RPC" style="document" use="literal">
   <ns1:parameter name="allowedMethods" value="*"/>
   <ns1:parameter name="typeMappingVersion" value="1.2"/>
   <ns1:parameter name="wsdlPortType" value="DocumentRepository_PortType"/>
   <ns1:parameter name="className" value="_2007.xds_b.iti.ihe.DocumentRepository_BindingSkeleton"/>
-  <ns1:parameter name="wsdlServicePort" value="DocumentRepository_Port_soap"/>
+  <ns1:parameter name="wsdlServicePort" value="DocumentRepository_Service"/>
   <ns1:parameter name="schemaQualified" value="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0,urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0,urn:ihe:iti:xds-b:2007,urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0,urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"/>
   <ns1:parameter name="wsdlTargetNamespace" value="urn:ihe:iti:xds-b:2007"/>
   <ns1:parameter name="wsdlServiceElement" value="DocumentRepository_Service"/>
