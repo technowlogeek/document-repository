@@ -47,7 +47,7 @@ public class DocumentRepository_BindingImpl implements _2007.xds_b.iti.ihe.Docum
 		List<String> documentIds = new ArrayList<String>();
 		if (null != body && body.length > 0) {
 			String documentId = body[0].getDocumentUniqueId();
-			if (null != documentId && !documentId.trim().equals("")) {
+			if (null != documentId && !documentId.trim().equals("") && !documentId.trim().equals("?")) {
 				String[] tokensByComma = documentId.split(",");
 				Arrays.stream(tokensByComma).forEach(e -> {
 					if (null != e && !e.trim().equals("")) {
